@@ -1,6 +1,6 @@
 import Categories from "./categories";
 import DisplayArticlesContainer from "./displayArticlesContainer";
-import Endpoints from "./endpoints";
+// import Endpoints from "./endpoints";
 import Lang from "./lang";
 import SortBy from "./sortBy";
 import Country from "./chooseCountry"
@@ -32,7 +32,7 @@ const Home=()=>{
                 <SortBy/> 
                 <Categories/>
                 
-                <DisplayArticlesContainer/>
+                {/* <DisplayArticlesContainer/>/ */}
             </div>
         </main>
         </>

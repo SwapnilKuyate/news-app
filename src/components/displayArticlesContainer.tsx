@@ -21,11 +21,11 @@ const DisplayArticlesContainer: React.FC = () => {
     const [article, getArticle] = useState<ArticleType[]>([]);
 
     const endPoint: string = useAppSelector((state) => state.selectedEndpoint.value)
-    const apiKey: string = "415ead87f04a4146a5d34aef161c761e"
+    const apiKey: string = "b9bc4df1321e4f84b3323239685d038c"
 
     // const currentCat:string = useAppSelector((state)=>state.category.value)
     const q: string = useAppSelector((state) => state.search.value)
-    const from: string = "2024-06-02" //yyyy-mm-dd
+    const from: string = "2024-07-02" //yyyy-mm-dd
     const sortBy: string = useAppSelector((state) => state.sortBy.value)
     const country: string = useAppSelector((state) => state.country.value)
     const category: string = useAppSelector((state) => state.category.value)
@@ -42,8 +42,8 @@ const DisplayArticlesContainer: React.FC = () => {
     // const tempVar="nul"
 
     const getNews = async () => {
-        let url: string = `https://newsapi.org/v2/${endPoint}?${endPoint === "top-headlines" && u_country}&${q !==null && u_q}&${u_from}&${u_sortBy}&${category !== "all" && u_category}&${lang !== "def" && u_lang}&apiKey=${apiKey}`;
-        // let url: string = `https://newsapi.org/v2/top-headlines?country=in&apiKey=415ead87f04a4146a5d34aef161c761e`
+        // let url: string = `https://newsapi.org/v2/${endPoint}?${endPoint === "top-headlines" && u_country}&${q !==null && u_q}&${u_from}&${u_sortBy}&${category !== "all" && u_category}&${lang !== "def" && u_lang}&apiKey=${apiKey}`;
+        let url: string = "https://newsapi.org/v2/everything?q=tesla&from=2024-06-11&sortBy=publishedAt&apiKey=d0a4258fac7e4af3916967c6d7145285"
         // console.log(url);
 
         let data: any = await fetch(url);

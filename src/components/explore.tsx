@@ -37,7 +37,7 @@ const Explore = () => {
                         <Lang />
                     </div>
                     <div className='mt-4'>{search !== "trending" && <p>Search Results For: {search}</p>}</div>
-                    <DisplayArticlesContainer />
+                    {/* <DisplayArticlesContainer /> */}
 
 
                 </div>

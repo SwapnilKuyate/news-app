@@ -1,11 +1,23 @@
+import Nav from './components/nav'
+import Home from './components/home'
+import Explore from './components/explore'
+import Footer from './components/footer'
+import RoutingPaths from './components/routingPaths'
 
-import './App.css'
+// import Endpoints from './components/endpoints'
+
 
 function App() {
 
   return (
     <>
-      <h1 className='text-3xl font-bold underline text-blue-500'>hello</h1>
+      <Nav/>
+      {/* <Home /> */}
+      {/* <Explore/> */}
+      {/*   */}
+      <RoutingPaths/>
+      <Footer/>
+      
     </>
   )
 }

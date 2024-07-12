@@ -1,3 +1,7 @@
+// import { Link } from 'react-router-dom';
+
+import { Link } from "react-router-dom";
+
 
 const Nav=()=>{
     
@@ -12,18 +16,15 @@ const Nav=()=>{
             </a>
           </div>
           <nav className="hidden md:flex items-center space-x-6">
-            <a className="hover:text-gray-400" href="#">
-              Home
-            </a>
-            <a className="hover:text-gray-400" href="#">
-              News
-            </a>
-            <a className="hover:text-gray-400" href="#">
-              Explore
-            </a>
-            <a className="hover:text-gray-400" href="#">
-              Contact
-            </a>
+            
+            <button className="hover:text-gray-400" >
+              <Link to="/">Home</Link>
+            </button>
+            
+            <button className="hover:text-gray-400" >
+              <Link to="/explore">Explore</Link>
+            </button>
+            
           </nav>
         </div>
       </header>
